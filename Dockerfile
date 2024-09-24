@@ -19,3 +19,5 @@ ENV PYTHONUNBUFFERED 1
 # copy entrypoint shell script to container
 COPY ./entrypoint.sh /
 ENTRYPOINT ["sh", "/entrypoint.sh"]
+
+EXPOSE 8000
