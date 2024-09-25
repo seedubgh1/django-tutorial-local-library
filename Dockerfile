@@ -16,8 +16,9 @@ WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
+## -- EXPOSE 8000
+
 # copy entrypoint shell script to container
 COPY ./entrypoint.sh /
 ENTRYPOINT ["sh", "/entrypoint.sh"]
 
-EXPOSE 8000
