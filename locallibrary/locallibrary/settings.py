@@ -29,6 +29,7 @@ DEBUG = os.getenv('DEBUG')
 
 ## -- ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'testserver']
 ALLOWED_HOSTS = ['*']
+## -- set trusted origins
 CSRF_TRUSTED_ORIGINS = ['http://*.amazonaws.com','http://127.0.0.1','http://*']
 
 
